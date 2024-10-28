@@ -42,7 +42,7 @@ function MusicPlayer(){
     return(
         <>
         <div className="container">
-            <h1>My PlayList</h1>
+            <h1>My Playlist</h1>
             <p>{songsData[currentSongIndex].singer}</p>
             <p>{songsData[currentSongIndex].songName}</p>
             <img src={songsData[currentSongIndex].imageSrc} alt="" />
