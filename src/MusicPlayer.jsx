@@ -42,7 +42,18 @@ function MusicPlayer(){
     return(
         <>
         <div className="container">
-            <h1>My Playlist</h1>
+        <div className="allSongs">
+            <h1>My playlist</h1>
+            {songsData.map((song) => (
+                <div key={song.id} onClick={() => setCurrentSongIndex(song.id)} className="songs">
+       
+                    <p>{song.singer} - {song.songName}</p>
+              
+                </div>
+            ))}
+        </div>
+        <div className="currentSongs">
+        <h1>Current song</h1>
             <p>{songsData[currentSongIndex].singer}</p>
             <p>{songsData[currentSongIndex].songName}</p>
             <img src={songsData[currentSongIndex].imageSrc} alt="" />
@@ -51,6 +62,8 @@ function MusicPlayer(){
             <audio onEnded={nextSong} ref={audioRef} src={songsData[currentSongIndex].audio} controls></audio>
             <button onClick={nextSong}>⏭️</button>
             </div>
+        </div>
+           
            
         </div>
         </>
