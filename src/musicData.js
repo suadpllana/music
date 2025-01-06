@@ -126,6 +126,14 @@ import zemerthysA from "./audios/EKO - ZEMERTHYS (Visualizer).mp3"
 import rrethin from "./images/rrethin.png"
 import rrethinA from "./audios/EKO-RRETHIN-E-NJEJT-Prod-Pluto.mp3"
 
+import tukacafyt from "./images/tukacafytmejet.png"
+import tukacafytA from "./audios/unikkatil tu u kacafyt me jet(me tekst)!!!.mp3"
+
+import shkel from "./images/shkel.png"
+import shkelA from "./audios/Shkel - Armend Rexhepagiqi (text).mp3"
+
+import supersonic from "./images/supersonic.png"
+import supersonicA from "./audios/Çelik Lipa x Buta - Supersonic.mp3" 
 
 
 
@@ -139,41 +147,62 @@ export const songsData = [
     },
     {
         id: 1,
+        imageSrc: supersonic,
+        singer: "Buta",
+        songName: "Supersonic",
+        audio: supersonicA
+    },
+    {
+        id: 2,
+        imageSrc: tukacafyt,
+        singer: "Unikkatil ft Cynaide",
+        songName: "Tu kacafyt me jet",
+        audio: tukacafytA
+    },
+    {
+        id: 3,
+        imageSrc: shkel,
+        singer: "Armend Rexhepagiqi",
+        songName: "Shkel",
+        audio: shkelA
+    },
+    {
+        id: 4,
         imageSrc: DiteSiKto,
         singer: "Rinesance",
         songName: "n'dite si kto",
         audio: DiteSiKtoA
     },
     {
-        id: 2,
+        id: 5,
         imageSrc: ikuBuzza,
         singer: "Cllevio",
         songName: "Iku Buzza",
         audio: ikuBuzzaA
     },
     {
-        id: 3,
+        id: 6,
         imageSrc: newSwag,
         singer: "Eko",
         songName: "New Swag",
         audio: newSwagA
     },
     {
-        id: 4,
+        id: 7,
         imageSrc: pare,
         singer: "Ago ft Singi (remaster)",
         songName: "Pare",
         audio: pareA
     },
     {
-        id: 5,
+        id: 8,
         imageSrc: pitbull,
         singer: "Singi ft Buta",
         songName: "Pitbull",
         audio: pitbullA
     },
     {
-        id: 6,
+        id: 9,
         imageSrc: navai,
         singer: "Navai ft MONA",
         songName: "Есенин",
@@ -181,84 +210,84 @@ export const songsData = [
     },
     
     {
-        id: 7,
+        id: 10,
         imageSrc: typeShit,
         singer: "Future ft Metro Boomin",
         songName: "Type Shit",
         audio: typeShitA
     },
     {
-        id: 8,
+        id: 11,
         imageSrc: zemerthys,
         singer: "Eko",
         songName: "Zemerthys",
         audio: zemerthysA
     },
     {
-        id: 9,
+        id: 12,
         imageSrc: thirreNjerin,
         singer: "LumiB ft Singi",
         songName: "Thirre Njerin",
         audio: thirreNjerinA
     },
     {
-        id: 10,
+        id: 13,
         imageSrc: star,
         singer: "Lil Peep",
         songName: "Star shopping",
         audio: starA
     },
     {
-        id: 11,
+        id: 14,
         imageSrc: skomUnFaj,
         singer: "Eko",
         songName: "Skom un faj",
         audio: skomUnFajA
     },
     {
-        id: 12,
+        id: 15,
         imageSrc: bet500,
         singer: "Mossi",
         songName: "Bet 500",
         audio: bet500A
     },
     {
-        id: 13,
+        id: 16,
         imageSrc: carelessWhisper,
         singer: "George Michael",
         songName: "Careless Whisper",
         audio: carelessWhisperA
     },
     {
-        id: 14,
+        id: 17,
         imageSrc: ditelindja,
         singer: "Yll Limani",
         songName: "Ditelindja",
         audio: ditelindjaA
     },
     {
-        id: 15,
+        id: 18,
         imageSrc: ecstacy,
         singer: "SUICIDAL IDOL",
         songName: "ecstasy",
         audio: ecstacyA
     },
     {
-        id: 16,
+        id: 19,
         imageSrc: fedex,
         singer: "Eko",
         songName: "Fedex",
         audio: fedexA
     },
     {
-        id: 17,
+        id: 20,
         imageSrc: kg,
         singer: "Singi ft McKresha",
         songName: "KG",
         audio: kgA
     },
     {
-        id: 18,
+        id: 21,
         imageSrc: likeThat,
         singer: "Future ft Kendrick Lamar ft Metro Boomin",
         songName: "Like that",
@@ -269,21 +298,21 @@ export const songsData = [
 
 
     {
-        id: 19,
+        id: 22,
         imageSrc: abyss,
         singer: "Rinesance",
         songName: "Abyss",
         audio: abyssA
     },
     {
-        id: 20,
+        id: 23,
         imageSrc: mister,
         singer: "Mossi",
         songName: "Mister",
         audio: misterA
     },
     {
-        id: 21,
+        id: 24,
         imageSrc: crazyStory,
         singer: "King Von",
         songName: "Crazy Story",
@@ -293,14 +322,14 @@ export const songsData = [
   
 
     {
-        id: 22,
+        id: 25,
         imageSrc: breakit,
         singer: "Pinkpantheress",
         songName: "Break it off",
         audio: breakitA
     },   
     {
-        id: 23,
+        id: 26,
         imageSrc: faleminderit,
         singer: "Buta",
         songName: "Faleminderit",
@@ -309,14 +338,14 @@ export const songsData = [
   
   
     {
-        id: 24,
+        id: 27,
         imageSrc: hoodLife,
         singer: "Vinz ft Stealth",
         songName: "Hood Life 3",
         audio: hoodLifeA
     },
     {
-        id: 25,
+        id: 28,
         imageSrc: kur,
         singer: "Ago",
         songName: "Kur",
@@ -326,7 +355,7 @@ export const songsData = [
     
 
     {
-        id: 26,
+        id: 29,
         imageSrc: machine,
         singer: "Mitski",
         songName: "Washing machine",
@@ -336,7 +365,7 @@ export const songsData = [
 
   
     {
-        id: 27,
+        id: 30,
         imageSrc: milk,
         singer: "Rinesance",
         songName: "Milk and honey",
@@ -348,7 +377,7 @@ export const songsData = [
 
 
     {
-        id: 28,
+        id: 31,
         imageSrc: myEyes,
         singer: "Travis Scott",
         songName: "My eyes",
@@ -361,14 +390,14 @@ export const songsData = [
 
    
     {
-        id: 29,
+        id: 32,
         imageSrc: nokia,
         singer: "Buta",
         songName: "Nokia",
         audio: nokiaA
     },
     {
-        id: 30,
+        id: 33,
         imageSrc: vullnetar,
         singer: "Arti",
         songName: "Vullnetar",
@@ -376,7 +405,7 @@ export const songsData = [
     },
 
     {
-        id: 31,
+        id: 34,
         imageSrc: yessirski,
         singer: "Ago ft Buta",
         songName: "Yessirski",
@@ -387,7 +416,7 @@ export const songsData = [
    
 
     {
-        id: 32,
+        id: 35,
         imageSrc: pastlives,
         singer: "sapientdream",
         songName: "PastLives",
@@ -396,7 +425,7 @@ export const songsData = [
 
     
     {
-        id: 33,
+        id: 36,
         imageSrc: poison,
         singer: "Grouper",
         songName: "Poison tree",
@@ -404,7 +433,7 @@ export const songsData = [
     },
 
     {
-        id: 34,
+        id: 37,
         imageSrc: reflection,
         singer: "Mac de marco",
         songName: "Chamber of reflection",
@@ -414,7 +443,7 @@ export const songsData = [
 
 
     {
-        id: 35,
+        id: 38,
         imageSrc: rrethin,
         singer: "Eko",
         songName: "Rrethin e njejt",
@@ -422,7 +451,7 @@ export const songsData = [
     },
 
     {
-        id: 36,
+        id: 39,
         imageSrc: runaway,
         singer: "Kanye West",
         songName: "Runaway",
@@ -430,7 +459,7 @@ export const songsData = [
     },
 
     {
-        id: 37,
+        id: 40,
         imageSrc: sickMode,
         singer: "Travis Scott",
         songName: "Sicko Mode",
@@ -442,7 +471,7 @@ export const songsData = [
   
 
     {
-        id: 38,
+        id: 41,
         imageSrc: takecare,
         singer: "Take care",
         songName: "Think of me once in a while",
@@ -450,7 +479,7 @@ export const songsData = [
     },
 
     {
-        id: 39,
+        id: 42,
         imageSrc: thinkingAboutYou,
         singer: "Frank Ocean",
         songName: "Thinking about you",
