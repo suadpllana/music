@@ -26,6 +26,7 @@ const Playlist = ({songsData, setFilteredSongs ,filteredSongs, setCurrentSongInd
                  <p>{song.singer} - {song.songName}</p>
                </div>
              )) : <p>The song was not found</p>}
+             <p className="closeModal" onClick={closeModal}>x</p>
            </div>
     </div>
     
