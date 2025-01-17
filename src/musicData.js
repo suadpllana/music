@@ -560,7 +560,7 @@ export const songsData = [
         imageSrc:  icanseeclearly,
         singer: "Lil darkie",
         songName: "I can see clearly",
-        audio: icanseeclearly
+        audio: icanseeclearlyA
     },
 
     {
@@ -694,7 +694,7 @@ export const songsData = [
         imageSrc:  noonenoticed,
         singer: "The marias",
         songName: "No one noticed",
-        audio: noonenoticed
+        audio: noonenoticedA
     },
     {
         id: 36,
@@ -1193,7 +1193,7 @@ export const songsData = [
         imageSrc:  sad,
         singer: "xxxtentaction",
         songName: "SAD!",
-        audio: sad
+        audio: sadA
     },
     {
         id: 107,
@@ -1474,6 +1474,6 @@ export const songsData = [
         imageSrc:  changeyalife,
         singer: "Haiti Babii",
         songName: "Change ya life",
-        audio: changeyalife
+        audio: changeyalifeA
     }
 ]

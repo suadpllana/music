@@ -10,6 +10,7 @@ const Playlist = ({songsData, setFilteredSongs ,filteredSongs, setCurrentSongInd
     }
     function closeModal(){
         setOpenPlaylist(false)
+        setFilteredSongs(songsData)
     }
 
 
