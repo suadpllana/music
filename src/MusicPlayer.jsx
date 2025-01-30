@@ -5,6 +5,7 @@ import cd from "../src/images/cd.png"
 import NextSongs from "./NextSongs";
 import { TbPlayerTrackPrevFilled } from "react-icons/tb";
 import { TbPlayerTrackNextFilled } from "react-icons/tb";
+import { RiResetLeftFill } from "react-icons/ri";
 function MusicPlayer({openPlaylist , setOpenPlaylist}) {
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
   const [audio, setAudio] = useState(songsData[currentSongIndex].audio);
@@ -46,7 +47,9 @@ function MusicPlayer({openPlaylist , setOpenPlaylist}) {
 
   }
 
-
+  function resetSong(){
+    audioRef.current.currentTime = 0; 
+  }
 
  
  
@@ -56,7 +59,7 @@ function MusicPlayer({openPlaylist , setOpenPlaylist}) {
      
        
     {openPlaylist &&
-     <Playlist setFilteredSongs={setFilteredSongs} songsData={songsData} setOpenPlaylist={setOpenPlaylist}  handleChange={handleChange} filteredSongs={filteredSongs} setCurrentSongIndex={setCurrentSongIndex}/>
+     <Playlist songId={songsData[currentSongIndex]?.id} setFilteredSongs={setFilteredSongs} songsData={songsData} setOpenPlaylist={setOpenPlaylist}  handleChange={handleChange} filteredSongs={filteredSongs} setCurrentSongIndex={setCurrentSongIndex}/>
     }
         
       
@@ -73,8 +76,9 @@ function MusicPlayer({openPlaylist , setOpenPlaylist}) {
          <div className="controls">
            <button onClick={prevSong}><TbPlayerTrackPrevFilled/></button>
            <audio onEnded={nextSong} ref={audioRef} src={songsData[currentSongIndex].audio} controls></audio>
-           <button onClick={nextSong}><TbPlayerTrackNextFilled/></button>
            
+           <button onClick={nextSong}><TbPlayerTrackNextFilled/></button>
+           <button><RiResetLeftFill className="reset" onClick={resetSong} /></button>
          </div>
        </div>
        <div className="big-image">

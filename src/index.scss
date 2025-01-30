@@ -163,6 +163,9 @@ body {
       margin: 0;
     }
   }
+  .black{
+    background-color: black;
+  }
 }
 
 .controls {
@@ -220,6 +223,7 @@ img {
 @media (max-width: 767px) {
   body {
     font-size: 14px;
+    margin: 0;
   }
 
   .container {
@@ -238,6 +242,9 @@ img {
       margin: 0;
       img {
         width: 80px;
+      }
+      .black{
+        background-color: saddlebrown;
       }
     }
 
@@ -264,7 +271,7 @@ img {
   }
   .next-songs-container {
     right: 30px;
-    bottom: -22rem;
+    bottom: -26rem;
   }
 
   .songs {
@@ -296,7 +303,7 @@ img {
     top: 0;
     right: 0;
     height: 50px;
-    width: 100vw;
+    width: 100%;
     background-color: #e49166;
     align-items: center;
     justify-content: center;
