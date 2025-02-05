@@ -80,7 +80,9 @@ body {
   width: 100%;
   margin-top: 5rem;
   text-align: center;
-
+  .reset{
+    margin-top: 1rem;
+  }
   p {
     font-size: 22px;
   }
@@ -91,14 +93,15 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     .cd-container {
       position: relative;
+     
     }
     .cd {
       width: 300px;
       height: 300px;
     }
     .image-in-cd {
-      right: 33%;
-      top: 17%;
+      right: 28%;
+      top: 16%;
       width: 130px;
       height: 130px;
       position: absolute;
@@ -235,6 +238,7 @@ img {
     .cd-container {
       .image-in-cd {
         top: 80px;
+        left:200px
       }
     }
     .allSongs {
@@ -328,11 +332,14 @@ img {
 }
 
 @media (min-width: 768px) and (max-width: 1217px) {
+  .sidebar{
+    width: 150px;
+   }
   .container {
     width: 100%;
     margin-left: 0;
     padding: 0;
-
+ 
     .cd-container {
       .image-in-cd {
         top: 80px;
@@ -356,6 +363,13 @@ img {
 
 
 @media (max-width: 1024px) and (max-height: 600px) {
+  
+  *{
+    overflow: hidden;
+  }
+  .sidebar{
+  height: 100vh;
+  }
   .container {
     margin: 0;
     .cd-container {
@@ -369,7 +383,7 @@ img {
       .big-image {
         display: block;
         img{
-          height: 180px;
+          height: 150px;
         }
       }
     }

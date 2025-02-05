@@ -5,6 +5,8 @@ import cd from "../src/images/cd.png"
 import NextSongs from "./NextSongs";
 import { TbPlayerTrackPrevFilled } from "react-icons/tb";
 import { TbPlayerTrackNextFilled } from "react-icons/tb";
+import { TbRewindForward15 } from "react-icons/tb";
+import { TbRewindBackward15 } from "react-icons/tb";
 import { RiResetLeftFill } from "react-icons/ri";
 function MusicPlayer({openPlaylist , setOpenPlaylist}) {
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
@@ -43,8 +45,13 @@ function MusicPlayer({openPlaylist , setOpenPlaylist}) {
         song.songName.toLowerCase().includes(filteredQuery) || song.singer.toLowerCase().includes(filteredQuery)
       )
     )
-
-
+  }
+  function fastForward(){
+    audioRef.current.currentTime += 15
+  }
+  function fastBackwards(){
+  
+    audioRef.current.currentTime -= 15
   }
 
   function resetSong(){
@@ -74,12 +81,16 @@ function MusicPlayer({openPlaylist , setOpenPlaylist}) {
          <h1>{songsData[currentSongIndex].songName}</h1>
          <p>{songsData[currentSongIndex].singer}</p>
          <div className="controls">
+          <button onClick={fastBackwards}><TbRewindBackward15/></button>
            <button onClick={prevSong}><TbPlayerTrackPrevFilled/></button>
            <audio onEnded={nextSong} ref={audioRef} src={songsData[currentSongIndex].audio} controls></audio>
            
            <button onClick={nextSong}><TbPlayerTrackNextFilled/></button>
-           <button><RiResetLeftFill className="reset" onClick={resetSong} /></button>
+            <button onClick={fastForward}><TbRewindForward15/></button>
+         
+          
          </div>
+         <button><RiResetLeftFill className="reset" onClick={resetSong} /></button>
        </div>
        <div className="big-image">
        <img src={songsData[currentSongIndex].imageSrc} alt="" />
