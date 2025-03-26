@@ -1,7 +1,7 @@
 import { songsData } from "./musicData";
 import { useState, useRef, useEffect } from "react";
 import ReactAudioPlayer from "react-h5-audio-player";
-import "react-h5-audio-player/lib/styles.css"; // Default styles
+import "react-h5-audio-player/lib/styles.css"; 
 
 import Playlist from "./Playlist";
 import cd from "../src/images/cd.png";
@@ -13,6 +13,7 @@ function MusicPlayer({ openPlaylist, setOpenPlaylist }) {
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
   const [filteredSongs, setFilteredSongs] = useState(songsData);
   const audioRef = useRef(null);
+ 
 
   function nextSong() {
     setCurrentSongIndex((prev) => (prev === songsData.length - 1 ? 0 : prev + 1));
@@ -43,6 +44,7 @@ function MusicPlayer({ openPlaylist, setOpenPlaylist }) {
           songsData={songsData}
           setOpenPlaylist={setOpenPlaylist}
           setCurrentSongIndex={setCurrentSongIndex}
+          filteredSongs={filteredSongs}
         />
       )}
 

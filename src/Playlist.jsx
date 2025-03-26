@@ -25,9 +25,17 @@ const Playlist = ({
     console.log(songsData.length);
   }
 
+
   function closeModal() {
     setOpenPlaylist(false);
     setFilteredSongs(songsData);
+  }
+  function handleChange(value) {
+    const filteredSongs = songsData.filter((song) =>
+      song.songName.toLowerCase().includes(value.toLowerCase())
+     || song.singer.toLowerCase().includes(value.toLowerCase())
+    );
+    setFilteredSongs(filteredSongs);
   }
 
   return (
@@ -36,10 +44,10 @@ const Playlist = ({
         <h1>My Playlist</h1>
         <input
           type="text"
-          onChange={(e) => handleChange(e.target.value)}
+         onChange={(e) => handleChange(e.target.value)}
           placeholder="Search the playlist"
         />
-        {filteredSongs.length > 0 ? (
+        {filteredSongs?.length > 0 ? (
           filteredSongs.map((song) => (
             <div
               key={song.id}

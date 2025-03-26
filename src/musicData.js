@@ -1,4 +1,5 @@
-
+import stephanie from "./images/stephanie.png";
+import stephanieA from "./audios/Nafeesisboujee - Stephanie (Slowed To Perfection).mp3";
 
 import ekoImg from "./images/rrethin.png"
 import ekoAudio from "./audios/EKO-RRETHIN-E-NJEJT-Prod-Pluto.mp3"
@@ -1475,5 +1476,13 @@ export const songsData = [
         singer: "Haiti Babii",
         songName: "Change ya life",
         audio: changeyalifeA
+    },
+    {
+        id: 147,
+        imageSrc:  stephanie,
+        singer: "Nafeesisboujee ",
+        songName: "Stephanie",
+        audio: stephanieA
     }
+    
 ]
