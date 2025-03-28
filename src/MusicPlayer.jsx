@@ -60,8 +60,8 @@ function MusicPlayer({ openPlaylist, setOpenPlaylist }) {
             <button onClick={fastBackwards}><TbRewindBackward15 /></button>
             <button onClick={prevSong}><TbPlayerTrackPrevFilled /></button>
 
-          
-            <ReactAudioPlayer
+            {songsData[currentSongIndex].audio ? (
+              <ReactAudioPlayer
               ref={audioRef}
               src={songsData[currentSongIndex].audio}
               autoPlay
@@ -71,7 +71,9 @@ function MusicPlayer({ openPlaylist, setOpenPlaylist }) {
               showSkipControls={false} 
               layout="stacked-reverse"
             
-            />
+            /> ) : <p>Loading audio</p>
+              }
+            
 
             <button onClick={nextSong}><TbPlayerTrackNextFilled /></button>
             <button onClick={fastForward}><TbRewindForward15 /></button>
