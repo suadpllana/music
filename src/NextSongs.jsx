@@ -11,7 +11,9 @@ const NextSongs = ({songsData , currentSongIndex, setCurrentSongIndex}) => {
 
   return (
     <div className="next-songs-container">
-    <h2>Next Song/s</h2>
+      {nextSongs.length > 1 && <h2>Next Songs</h2>}
+      {nextSongs.length === 1 && <h2>Next Song</h2>}
+    
     {nextSongs.length > 0 ? 
     nextSongs.map((nextSong) => (
         <div key={nextSong.id} onClick={() => setCurrentSongIndex(nextSong.id)}>
