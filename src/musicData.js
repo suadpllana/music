@@ -116,7 +116,14 @@ import vjeshtdimer from "./images/vjeshtdimer.png"
 import diteereA from "./audios/Buta - Dite e Re (prod. OG Abi).mp3"
 
 
+import inMyZone from "./images/inMyZone.png"
+import inMyZoneA from "./audios/lluni - IN MY ZONE.mp3"
 
+import vallah from "./images/vallah.png"
+import vallahA from "./audios/GJESTI - VALLAH (Prod. By Albos).mp3";
+
+import threePeat from "./images/3Peat.png"
+import threePeatA from "./audios/Buta - 3PEAT (butas verse only).mp3"
 
 
  import vivaldi from "./images/vivaldi.png"
@@ -154,6 +161,28 @@ import imortalA from "./audios/bletapertace - imortal ft. Rinesance.mp3"
 export const songsData = [
     {
         id: 0,
+        imageSrc: threePeat,
+        singer: "Buta",
+        songName: "3peat",
+        audio: threePeatA
+
+    },
+    {
+        id: 1,
+        imageSrc: vallah,
+        singer: "Gjesti",
+        songName: "Vallah",
+        audio: vallahA
+    },
+    {
+        id: 2,
+        imageSrc: inMyZone,
+        singer: "Lluni",
+        songName: "In my zone",
+        audio: inMyZoneA
+    },
+    {
+        id: 3,
         imageSrc: vivaldi,
         singer: "Buta",
         songName: "Vivaldi",
@@ -161,112 +190,112 @@ export const songsData = [
     },
 
    {
-    id: 1,
+    id: 4,
     imageSrc: fobia,
     singer: "Bleta pertace ft Lyrical Son",
     songName: "fobia/imagjinata",
     audio: fobiaA
    },
    {
-    id: 2,
+    id: 5,
     imageSrc:  remedi,
     singer: "Eko",
     songName: "Remedi",
     audio: remediA
 },
 {
-    id: 3,
+    id: 6,
     imageSrc:  faleminderit,
     singer: "Buta",
     songName: "Faleminderit",
     audio: faleminderitA
 },
 {
-    id: 4,
+    id: 7,
     imageSrc:  fedex,
     singer: "Eko",
     songName: "Fedex",
     audio: fedexA
 },
 {
-    id: 5,
+    id: 8,
     imageSrc:  ivanka,
     singer: "Buta",
     songName: "Ivanka",
     audio: ivankaA
 },
 {
-    id: 6,
+    id: 9,
     imageSrc:  zemerthys,
     singer: "Eko",
     songName: "Zemerthys",
     audio: zemerthysA
 },
 {
-    id: 7,
+    id: 10,
     imageSrc:  rrethin,
     singer: "Eko",
     songName: "Rrethin e njejt",
     audio: rrethinA
 },
 {
-    id: 8,
+    id: 11,
     imageSrc:  fobia,
     singer: "Bleta pertace ft Singi",
     songName: "babadimri s'ekziston ",
     audio: babadimriA
 },
 {
-    id: 9,
+    id: 12,
     imageSrc:  panda,
     singer: "Cygo",
     songName: "Panda E",
     audio: pandaA
 },
 {
-    id: 10,
+    id: 13,
     imageSrc:  esmeralda,
     singer: "Amar",
     songName: "Esmeralda",
     audio: esmeraldaA
 },
 {
-    id: 11,
+    id: 14,
     imageSrc:  influenceekeqe,
     singer: "Eko",
     songName: "Influence e keqe",
     audio: influenceekeqeA
 },
 {
-    id: 12,
+    id: 15,
     imageSrc:  fobia,
     singer: "Bleta pertace",
     songName: "mangupllak me stil",
     audio: mangupllakA
 },
 {
-    id: 13,
+    id: 16,
     imageSrc:  twentyfourH,
     singer: "Buta",
     songName: "24h",
     audio: twentyfourHA
 },
 {
-    id: 14,
+    id: 17,
     imageSrc:  bet500,
     singer: "Mossi",
     songName: "Bet 500",
     audio: bet500A
 },
 {
-    id: 15,
+    id: 18,
     imageSrc:  kumete,
     singer: "Gjesti",
     songName: "Ku mete",
     audio: kumeteA
 },
 {
-    id: 16,
+    id: 19,
     imageSrc:  lost,
     singer: "Buta",
     songName: "Lost",
@@ -274,105 +303,105 @@ export const songsData = [
 },
 
     {
-        id: 17,
+        id: 20,
         imageSrc:  supersonic,
         singer: "Buta",
         songName: "Supersonic",
         audio: supersonicA
     },
     {
-        id: 18,
+        id: 21,
         imageSrc:  vullnetar,
         singer: "Arti",
         songName: "Vullnetar",
         audio: vullnetarA
     },
   {
-        id: 19,
+        id: 22,
         imageSrc:  ritalin,
         singer: "Buta",
         songName: "Ritalin",
         audio: ritalinA
   },
   {
-    id: 20,
+    id: 23,
     imageSrc:  newSwag,
     singer: "Eko",
     songName: "New swag",
     audio: newSwagA
 },
 {
-    id: 21,
+    id: 24,
     imageSrc:  imortal,
     singer: "Bleta pertace ft Rinesance",
     songName: "imortal ",
     audio: imortalA
 },
 {
-    id: 22,
+    id: 25,
     imageSrc:  nokia,
     singer: "Buta",
     songName: "Nokia",
     audio: nokiaA
 },
 {
-    id: 23,
+    id: 26,
     imageSrc:  crazyStory,
     singer: "King von",
     songName: "Crazy story",
     audio: crazyStoryA
 },
 {
-    id: 24,
+    id: 27,
     imageSrc:  vjeshtdimer,
     singer: "Buta",
     songName: "Dite e re",
     audio: diteereA
 },
 {
-    id: 25,
+    id: 28,
     imageSrc:  rehati,
     singer: "Bleta pertace",
     songName: "rehati",
     audio: rehatiA
 },
 {
-    id: 26,
+    id: 29,
     imageSrc:  yessirski,
     singer: "Ago x Buta",
     songName: "Yessirski",
     audio: yessirskiA
 },
 {
-    id: 27,
+    id: 30,
     imageSrc:  bletapertace,
     singer: "Bleta pertace",
     songName: "bletapertace",
     audio: bletapertaceA
 },
 {
-    id: 28,
+    id: 31,
     imageSrc:  skomUnFaj,
     singer: "Eko",
     songName: "Skom un faj",
     audio: skomUnFajA
 },
 {
-    id: 29,
+    id: 32,
     imageSrc:  ikuBuzza,
     singer: "Cllevio",
     songName: "Iku buzza",
     audio: ikuBuzzaA
 },
 {
-    id: 30,
+    id: 33,
     imageSrc:  pare,
     singer: "Ago ft Singi",
     songName: "Pare",
     audio: pareA
 },
 {
-    id: 31,
+    id: 34,
     imageSrc:  abyss,
     singer: "Rinesance",
     songName: "Abyss",
