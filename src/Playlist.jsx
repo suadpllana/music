@@ -42,6 +42,7 @@ const Playlist = ({
     <div className="song-container" onClick={closeModal}>
       <div className="allSongs" onClick={(e) => e.stopPropagation()}>
         <h1>My Playlist</h1>
+        <h3 style={{margin: "0"}}>{filteredSongs?.length} Songs</h3>
         <input
           type="text"
          onChange={(e) => handleChange(e.target.value)}
