@@ -179,15 +179,16 @@ import smgA from "./audios/Buta x Singi - SMG.mp3"
 
 import zitti from "./images/zitti.png"
 import zittiA from "./audios/Måneskin - ZITTI E BUONI (Lyrics) Italy  Eurovision 2021.mp3"
-
+ import chanel from "./images/chanel.png"
+ import chanelA from "./audios/EKO FT. BUTA - CHANEL (Official Music Video).mp3"
 
 export const songsData = [
     {
         id: 0,
-        imageSrc: dyTelefona,
-        singer: "Buta ft Rinesance",
-        songName: "Dy Telefona",
-        audio: dyTelefonaA
+        imageSrc: chanel,
+        singer: "Eko ft Buta",
+        songName: "Chanel",
+        audio: chanelA
     },
     {
         id: 1,
