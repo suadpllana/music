@@ -184,301 +184,301 @@ import zittiA from "./audios/Måneskin - ZITTI E BUONI (Lyrics) Italy  Eurovisio
 
 export const songsData = [
     {
-        id: 0,
+        id: 1,
         imageSrc: chanel,
         singer: "Eko ft Buta",
         songName: "Chanel",
         audio: chanelA
     },
     {
-        id: 1,
+        id: 2,
         imageSrc: coraline,
         singer: "Maneskin",
         songName: "Coraline",
         audio: coralineA
     },
     {
-        id: 2,
+        id: 3,
         imageSrc: verstappen,
         singer: "Eko",
         songName: "Verstappen",
         audio: verstappenA
     },
     {
-        id: 3,
+        id: 4,
         imageSrc: prejQeTkomLon,
         singer: "Eko",
         songName: "Prej qe t'kom lon",
         audio: prejQeTkomLonA
     },
     {
-        id: 4,
+        id: 5,
         imageSrc: pink,
         singer: "Eko",
         songName: "Pink",
         audio: pinkA
     },
     {
-        id: 5,
+        id: 6,
         imageSrc: smg,
         singer: "Buta ft Singi",
         songName: "SMG",
         audio: smgA
     },
     {
-        id: 6,
+        id: 7,
         imageSrc: zitti,
         singer: "Maneskin",
         songName: "Zitti e buoni",
         audio: zittiA
     },
     {
-        id: 7,
+        id: 8,
         imageSrc: missMe,
         singer: "Trefuego",
         songName: "miss me",
         audio: missMeA
     },
     {
-        id: 8,
+        id: 9,
         imageSrc: threePeat,
         singer: "Buta",
         songName: "3peat",
         audio: threePeatA
     },
     {
-        id: 9,
+        id: 10,
         imageSrc: vallah,
         singer: "Gjesti",
         songName: "Vallah",
         audio: vallahA
     },
     {
-        id: 10,
+        id: 11,
         imageSrc: inMyZone,
         singer: "Lluni",
         songName: "In my zone",
         audio: inMyZoneA
     },
     {
-        id: 11,
+        id: 12,
         imageSrc: vivaldi,
         singer: "Buta",
         songName: "Vivaldi",
         audio: vivaldiA
     },
     {
-        id: 12,
+        id: 13,
         imageSrc: fobia,
         singer: "Bleta pertace ft Lyrical Son",
         songName: "fobia/imagjinata",
         audio: fobiaA
     },
     {
-        id: 13,
+        id: 14,
         imageSrc: remedi,
         singer: "Eko",
         songName: "Remedi",
         audio: remediA
     },
     {
-        id: 14,
+        id: 15,
         imageSrc: faleminderit,
         singer: "Buta",
         songName: "Faleminderit",
         audio: faleminderitA
     },
     {
-        id: 15,
+        id: 16,
         imageSrc: fedex,
         singer: "Eko",
         songName: "Fedex",
         audio: fedexA
     },
     {
-        id: 16,
+        id: 17,
         imageSrc: ivanka,
         singer: "Buta",
         songName: "Ivanka",
         audio: ivankaA
     },
     {
-        id: 17,
+        id: 18,
         imageSrc: zemerthys,
         singer: "Eko",
         songName: "Zemerthys",
         audio: zemerthysA
     },
     {
-        id: 18,
+        id: 19,
         imageSrc: rrethin,
         singer: "Eko",
         songName: "Rrethin e njejt",
         audio: rrethinA
     },
     {
-        id: 19,
+        id: 20,
         imageSrc: fobia,
         singer: "Bleta pertace ft Singi",
         songName: "babadimri s'ekziston",
         audio: babadimriA
     },
     {
-        id: 20,
+        id: 21,
         imageSrc: panda,
         singer: "Cygo",
         songName: "Panda E",
         audio: pandaA
     },
     {
-        id: 21,
+        id: 22,
         imageSrc: esmeralda,
         singer: "Amar",
         songName: "Esmeralda",
         audio: esmeraldaA
     },
     {
-        id: 22,
+        id: 23,
         imageSrc: influenceekeqe,
         singer: "Eko",
         songName: "Influence e keqe",
         audio: influenceekeqeA
     },
     {
-        id: 23,
+        id: 24,
         imageSrc: fobia,
         singer: "Bleta pertace",
         songName: "mangupllak me stil",
         audio: mangupllakA
     },
     {
-        id: 24,
+        id: 25,
         imageSrc: twentyfourH,
         singer: "Buta",
         songName: "24h",
         audio: twentyfourHA
     },
     {
-        id: 25,
+        id: 26,
         imageSrc: bet500,
         singer: "Mossi",
         songName: "Bet 500",
         audio: bet500A
     },
     {
-        id: 26,
+        id: 27,
         imageSrc: kumete,
         singer: "Gjesti",
         songName: "Ku mete",
         audio: kumeteA
     },
     {
-        id: 27,
+        id: 28,
         imageSrc: lost,
         singer: "Buta",
         songName: "Lost",
         audio: lostA
     },
     {
-        id: 28,
+        id: 29,
         imageSrc: supersonic,
         singer: "Buta",
         songName: "Supersonic",
         audio: supersonicA
     },
     {
-        id: 29,
+        id: 30,
         imageSrc: vullnetar,
         singer: "Arti",
         songName: "Vullnetar",
         audio: vullnetarA
     },
     {
-        id: 30,
+        id: 31,
         imageSrc: ritalin,
         singer: "Buta",
         songName: "Ritalin",
         audio: ritalinA
     },
     {
-        id: 31,
+        id: 32,
         imageSrc: newSwag,
         singer: "Eko",
         songName: "New swag",
         audio: newSwagA
     },
     {
-        id: 32,
+        id: 33,
         imageSrc: imortal,
         singer: "Bleta pertace ft Rinesance",
         songName: "imortal",
         audio: imortalA
     },
     {
-        id: 33,
+        id: 34,
         imageSrc: nokia,
         singer: "Buta",
         songName: "Nokia",
         audio: nokiaA
     },
     {
-        id: 34,
+        id: 35,
         imageSrc: crazyStory,
         singer: "King von",
         songName: "Crazy story",
         audio: crazyStoryA
     },
     {
-        id: 35,
+        id: 36,
         imageSrc: vjeshtdimer,
         singer: "Buta",
         songName: "Dite e re",
         audio: diteereA
     },
     {
-        id: 36,
+        id: 37,
         imageSrc: rehati,
         singer: "Bleta pertace",
         songName: "rehati",
         audio: rehatiA
     },
     {
-        id: 37,
+        id: 38,
         imageSrc: yessirski,
         singer: "Ago x Buta",
         songName: "Yessirski",
         audio: yessirskiA
     },
     {
-        id: 38,
+        id: 39,
         imageSrc: bletapertace,
         singer: "Bleta pertace",
         songName: "bletapertace",
         audio: bletapertaceA
     },
     {
-        id: 39,
+        id: 40,
         imageSrc: skomUnFaj,
         singer: "Eko",
         songName: "Skom un faj",
         audio: skomUnFajA
     },
     {
-        id: 40,
+        id: 41,
         imageSrc: ikuBuzza,
         singer: "Cllevio",
         songName: "Iku buzza",
         audio: ikuBuzzaA
     },
     {
-        id: 41,
+        id: 42,
         imageSrc: pare,
         singer: "Ago ft Singi",
         songName: "Pare",
         audio: pareA
     },
     {
-        id: 42,
+        id: 43,
         imageSrc: abyss,
         singer: "Rinesance",
         songName: "Abyss",

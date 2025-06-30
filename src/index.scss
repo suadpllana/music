@@ -87,6 +87,17 @@ background-color: yellowgreen;
   align-items: center;
   z-index: 10000;
 
+  .delete-button{
+    width: 110px;
+    position: absolute;
+    right: 20px;
+    height: 25px;
+    background-color: rgb(199, 30, 30);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
   .allSongs {
     position: relative;
     max-height: 70vh;
@@ -116,7 +127,129 @@ background-color: yellowgreen;
     }
   }
 }
+.ReactModal__Overlay {
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+ .add-song-modal {
+  background-color: #191970;
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
 
+  .add-song-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    label {
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+
+    input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+      width: 80%;
+      max-width: 300px;
+
+      &[type="text"] {
+        margin-bottom: 10px;
+      }
+
+      &[type="file"] {
+        margin-bottom: 10px;
+      }
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+
+      &:hover {
+        background-color: #45a049;
+      }
+
+      &:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+.add-song-modal-overlay {
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.ReactModal__Content {
+
+
+ 
+  h2 {
+    margin-top: 0;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+
+  div {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .confirm-button {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+
+    &:hover {
+      background-color: #cc0000;
+    }
+  }
+
+  .cancel-button {
+    background-color: #ccc;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #999;
+    }
+  }
+}
 .nav-container {
   display: none;
 }
@@ -124,7 +257,29 @@ background-color: yellowgreen;
   width: 100%;
   margin-top: 5rem;
   text-align: center;
+
+ .add-song-button {
+  background: linear-gradient(to right, #6366f1, #8b5cf6);
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.add-song-button:hover {
+  background: linear-gradient(to right, #8b5cf6, #6366f1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
   
+  
+
   .reset{
     margin-top: 1rem;
   }
@@ -282,6 +437,10 @@ img {
     font-size: 14px;
     margin: 0;
   }
+  .add-song-modal{
+    width: 50%;
+    margin-top: 4rem;
+  }
 
   .container {
     width: 100%;
@@ -386,6 +545,10 @@ img {
 }
 
 @media (min-width: 768px) and (max-width: 1217px) {
+  .add-song-modal{
+    width: 50%;
+    margin-top: 4rem;
+  }
   .sidebar{
     width: 150px;
    }
