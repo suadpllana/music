@@ -7,6 +7,8 @@ const NextSongs = ({songsData , currentSongIndex, setCurrentSongIndex}) => {
     useEffect(() => {
      
         setNextSongs(songsData.slice(currentSongIndex + 1, currentSongIndex + 6))
+        console.log(songsData)
+        console.log(nextSongs)
     } , [currentSongIndex])
 
   return (
@@ -15,8 +17,8 @@ const NextSongs = ({songsData , currentSongIndex, setCurrentSongIndex}) => {
       {nextSongs.length === 1 && <h2>Next Song</h2>}
     
     {nextSongs.length > 0 ? 
-    nextSongs.map((nextSong) => (
-        <div key={nextSong.id} onClick={() => setCurrentSongIndex(nextSong.id)}>
+    nextSongs.map((nextSong, index) => (
+        <div key={nextSong.id} onClick={() => setCurrentSongIndex(nextSong.id - 1)}>
              <img  src={nextSong.imageSrc}/>  
              <p>{nextSong.singer} - {nextSong.songName}</p>
         </div>

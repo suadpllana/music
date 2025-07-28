@@ -36,9 +36,7 @@ const Playlist = ({
       setCurrentSongIndex(index);
       setOpenPlaylist(false);
       setFilteredSongs(allSongs);
-      console.log(
-        `Playing song at index ${index}, allSongs length: ${allSongs.length}`
-      );
+    
     } else {
       console.error(`Song with id ${id} not found in allSongs`);
     }
