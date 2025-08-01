@@ -7,9 +7,19 @@ const NextSongs = ({songsData , currentSongIndex, setCurrentSongIndex}) => {
     useEffect(() => {
      
         setNextSongs(songsData.slice(currentSongIndex + 1, currentSongIndex + 6))
-        console.log(songsData)
-        console.log(nextSongs)
     } , [currentSongIndex])
+
+      function playSong(id) {
+    const index = songsData.findIndex((song) => song.id === id);
+    if (index !== -1) {
+      setCurrentSongIndex(index);
+
+    
+    } else {
+      console.error(`Song with id ${id} not found in allSongs`);
+    }
+  }
+
 
   return (
     <div className="next-songs-container">
@@ -18,7 +28,7 @@ const NextSongs = ({songsData , currentSongIndex, setCurrentSongIndex}) => {
     
     {nextSongs.length > 0 ? 
     nextSongs.map((nextSong, index) => (
-        <div key={nextSong.id} onClick={() => setCurrentSongIndex(nextSong.id - 1)}>
+        <div key={nextSong.id} onClick={() => playSong(nextSong.id)}>
              <img  src={nextSong.imageSrc}/>  
              <p>{nextSong.singer} - {nextSong.songName}</p>
         </div>
