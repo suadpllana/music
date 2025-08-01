@@ -7,7 +7,7 @@ const NextSongs = ({songsData , currentSongIndex, setCurrentSongIndex}) => {
     useEffect(() => {
      
         setNextSongs(songsData.slice(currentSongIndex + 1, currentSongIndex + 6))
-    } , [currentSongIndex])
+    } , [currentSongIndex, songsData])
 
       function playSong(id) {
     const index = songsData.findIndex((song) => song.id === id);
